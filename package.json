@@ -1,0 +1,19 @@
+{
+  "name": "pkg-example",
+  "bin": "./src/index.js",
+  "scripts": {
+    "test": "node src/index.js",
+    "build": "pkg ."
+  },
+  "dependencies": {
+    "pkg": "^4.3.7"
+  },
+  "pkg": {
+    "out-path": "pkg",
+    "scripts": "src/**/*.js",
+    "targets": [
+      "node10"
+    ]
+  },
+  "license": "MIT"
+}
